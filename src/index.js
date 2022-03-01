@@ -1,5 +1,8 @@
-//
+import run from "./run.js"
 
-export function app(){
-    console.log('app');
+export async function app() {
+
+  console.log("=========app======");
+  await run('mario-kart.z64')
+  
 }
