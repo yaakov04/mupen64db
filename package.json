@@ -4,7 +4,7 @@
   "description": "Aplicacion de terminal para lanzar roms de Nintendo 64 con mupen64plus",
   "main": "src/index.js",
   "bin": {
-    "mupen64db":"bin/mupen64db"
+    "mupen64db": "bin/mupen64db"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,7 @@
   "author": "Diego Briones",
   "license": "GPL-3.0",
   "dependencies": {
-    "esm": "^3.2.25"
+    "esm": "^3.2.25",
+    "inquirer": "^8.2.0"
   }
 }

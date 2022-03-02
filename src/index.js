@@ -1,8 +1,7 @@
-import run from "./run.js"
+import Prompt from "./Prompt";
 
 export async function app() {
 
-  console.log("=========app======");
-  await run('mario-kart.z64')
+  await Prompt();
   
 }
