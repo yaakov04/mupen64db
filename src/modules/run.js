@@ -9,11 +9,9 @@ const execute = async function (cmd, fn) {
   });
 };
 
-const run = async function (romDir) {
+const run = async function (path) {
   const emulator = "mupen64plus";
-  const homeDir = "~/";
-  const path = `${homeDir}'${romDir}'`;
-  const cmd = `${emulator} ${path}`;
+  const cmd = `${emulator} '${path}'`;
 
   await execute(cmd, console.log);
 };
