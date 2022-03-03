@@ -2,7 +2,7 @@ import { exec } from "child_process";
 
 const execute = async function (cmd, fn) {
   await exec(cmd, (error, stdout, stderr) => {
-    //fn(stdout);
+    fn(stdout);
     if (error && stderr) {
       fn(error, stderr);
     }
